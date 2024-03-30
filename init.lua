@@ -85,6 +85,8 @@ P.S. You can delete this when you're done too. It's your config now! :)
 --]]
 
 vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
 
 -- Set <space> as the leader key
 -- See `:help mapleader`
@@ -241,6 +243,8 @@ require('lazy').setup({
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
+
+  { 'sebdah/vim-delve' },
 
   -- Here is a more advanced example where we pass configuration
   -- options to `gitsigns.nvim`. This is equivalent to the following Lua:
